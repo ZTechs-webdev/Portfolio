@@ -2,65 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zain Ahsen | Web Developer</title>
 
   <!-- SEO -->
-  <meta name="description" content="Professional Web Developer specializing in modern, fast, responsive websites.">
-  <meta name="keywords" content="Web Developer, HTML, CSS, JavaScript, Portfolio">
-  <meta name="author" content="Zain Ahsen">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta name="description" content="Professional Web Developer creating modern, fast websites.">
+  <meta name="keywords" content="Web Developer, HTML, CSS, Portfolio">
 
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header class="hero">
-  <h1 data-aos="fade-down">Zain Ahsen</h1>
-  <p data-aos="fade-up">Web Developer | HTML • CSS • WordPress</p>
+  <h1>Zain Ahsen</h1>
+  <p>Web Developer | HTML • CSS • WordPress</p>
   <a href="#contact" class="btn">Hire Me</a>
 </header>
 
-<section class="skills" data-aos="fade-up">
+<section class="about">
+  <h2>About Me</h2>
+  <p>I build clean, responsive and modern websites that help businesses grow.</p>
+</section>
+
+<section class="skills">
   <h2>Skills</h2>
   <div class="grid">
-    <div class="card">HTML5</div>
-    <div class="card">CSS3</div>
-    <div class="card">JavaScript</div>
-    <div class="card">WordPress</div>
-    <div class="card">Responsive Design</div>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>WordPress</span>
+    <span>Responsive Design</span>
   </div>
 </section>
 
-<section class="projects" data-aos="fade-up">
-  <h2>Portfolio</h2>
-  <div class="grid">
+<section class="projects">
+  <h2>Projects</h2>
+  <div class="cards">
     <div class="card">Business Website</div>
     <div class="card">Portfolio Website</div>
     <div class="card">Landing Page</div>
   </div>
 </section>
 
-<section id="contact" data-aos="fade-up">
+<section class="contact" id="contact">
   <h2>Contact Me</h2>
-
-  <!-- FORM -->
   <form action="https://formspree.io/f/mbdjpvje" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Send Message</button>
   </form>
 </section>
@@ -69,11 +58,7 @@
   © 2025 Zain Ahsen | All Rights Reserved
 </footer>
 
-<!-- WhatsApp -->
-<a href="https://wa.me/923157531971" class="whatsapp" target="_blank">💬</a>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
+<a class="whatsapp" href="https://wa.me/923157531971" target="_blank">💬</a>
 
 </body>
 </html>
