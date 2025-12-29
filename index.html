@@ -1,84 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Professional Web Developer offering modern, responsive websites using HTML, CSS and WordPress.">
-    <meta name="keywords" content="Web Developer, HTML, CSS, WordPress, Website Design">
-    <meta name="author" content="Zain Ahsen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Zain Ahsen | Web Developer</title>
 
-    <title>Zain Ahsen | Web Developer</title>
+  <!-- SEO -->
+  <meta name="description" content="Professional Web Developer specializing in modern, fast, responsive websites.">
+  <meta name="keywords" content="Web Developer, HTML, CSS, JavaScript, Portfolio">
+  <meta name="author" content="Zain Ahsen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <h2>Zain Ahsen</h2>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><button id="toggleMode">🌙</button></li>
-    </ul>
-</nav>
-
-<!-- HERO -->
 <header class="hero">
-    <h1>Professional Web Developer</h1>
-    <p>HTML • CSS • WordPress</p>
-    <a href="#contact" class="btn">Hire Me</a>
+  <h1 data-aos="fade-down">Zain Ahsen</h1>
+  <p data-aos="fade-up">Web Developer | HTML • CSS • WordPress</p>
+  <a href="#contact" class="btn">Hire Me</a>
 </header>
 
-<!-- ABOUT -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I create modern, responsive websites that help businesses grow online.
-        Clean design, fast performance, and user-friendly layouts are my priorities.
-    </p>
+<section class="skills" data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">HTML5</div>
+    <div class="card">CSS3</div>
+    <div class="card">JavaScript</div>
+    <div class="card">WordPress</div>
+    <div class="card">Responsive Design</div>
+  </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-    <h2>My Skills</h2>
-    <div class="skills">
-        <div class="skill">HTML5</div>
-        <div class="skill">CSS3</div>
-        <div class="skill">WordPress</div>
-        <div class="skill">Responsive Design</div>
-        <div class="skill">Landing Pages</div>
-    </div>
+<section class="projects" data-aos="fade-up">
+  <h2>Portfolio</h2>
+  <div class="grid">
+    <div class="card">Business Website</div>
+    <div class="card">Portfolio Website</div>
+    <div class="card">Landing Page</div>
+  </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-        <div class="project-card">Business Website</div>
-        <div class="project-card">Portfolio Website</div>
-        <div class="project-card">Landing Page</div>
-    </div>
-</section>
+<section id="contact" data-aos="fade-up">
+  <h2>Contact Me</h2>
 
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+  <!-- FORM -->
+  <form action="https://formspree.io/f/xyzzwqka" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
 <footer>
-    © 2025 Zain Ahsen | All Rights Reserved
+  © 2025 Zain Ahsen | All Rights Reserved
 </footer>
 
-<script src="script.js"></script>
+<!-- WhatsApp -->
+<a href="https://wa.me/923157531971" class="whatsapp" target="_blank">💬</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
 </body>
 </html>
